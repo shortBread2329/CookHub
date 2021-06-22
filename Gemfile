@@ -63,4 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 # webpacker
-gem 'webpacker', github: 'rails/webpacker'
+gem 'webpacker', '~> 4.x'
