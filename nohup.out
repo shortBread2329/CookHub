@@ -1,0 +1,925 @@
+=> Booting Puma
+=> Rails 5.2.6 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on unix:///var/www/rails/CookHub/tmp/sockets/puma.sock
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-06-28 11:37:52 +0000 ===
+- Goodbye!
+Exiting
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/dynamic_matchers.rb:22:in `method_missing': undefined method `devise' for Admin (call 'Admin.connection' to establish a connection):Class (NoMethodError)
+	from /var/www/rails/CookHub/app/models/admin.rb:4:in `<class:Admin>'
+	from /var/www/rails/CookHub/app/models/admin.rb:1:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `block in require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:378:in `block in require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:356:in `require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:334:in `depend_on'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:246:in `require_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:478:in `block (2 levels) in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `block in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:356:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:228:in `block in tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:226:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:205:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application.rb:361:in `initialize!'
+	from /var/www/rails/CookHub/config/environment.rb:5:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+	from config.ru:3:in `block in <main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:27:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:312:in `block in start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:379:in `handle_profiling'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:311:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:53:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:147:in `block in perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `tap'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command/base.rb:69:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command.rb:46:in `invoke'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands.rb:18:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /var/www/rails/CookHub/bin/rails:9:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/command.rb:7:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client.rb:30:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/bin/spring:49:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /var/www/rails/CookHub/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+=> Booting Puma
+=> Rails 5.2.6 application starting in production 
+=> Run `rails server -h` for more startup options
+Exiting
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/dynamic_matchers.rb:22:in `method_missing': undefined method `devise' for Admin (call 'Admin.connection' to establish a connection):Class (NoMethodError)
+	from /var/www/rails/CookHub/app/models/admin.rb:4:in `<class:Admin>'
+	from /var/www/rails/CookHub/app/models/admin.rb:1:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `block in require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:378:in `block in require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:356:in `require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:334:in `depend_on'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:246:in `require_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:478:in `block (2 levels) in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `block in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:356:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:228:in `block in tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:226:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:205:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application.rb:361:in `initialize!'
+	from /var/www/rails/CookHub/config/environment.rb:5:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+	from config.ru:3:in `block in <main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:27:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:312:in `block in start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:379:in `handle_profiling'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:311:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:53:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:147:in `block in perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `tap'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command/base.rb:69:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command.rb:46:in `invoke'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands.rb:18:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /var/www/rails/CookHub/bin/rails:9:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/command.rb:7:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client.rb:30:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/bin/spring:49:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /var/www/rails/CookHub/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+=> Booting Puma
+=> Rails 5.2.6 application starting in production 
+=> Run `rails server -h` for more startup options
+Exiting
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/dynamic_matchers.rb:22:in `method_missing': undefined method `devise' for Admin (call 'Admin.connection' to establish a connection):Class (NoMethodError)
+	from /var/www/rails/CookHub/app/models/admin.rb:4:in `<class:Admin>'
+	from /var/www/rails/CookHub/app/models/admin.rb:1:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `block in require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:291:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:378:in `block in require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:37:in `load_interlock'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:356:in `require_or_load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:334:in `depend_on'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activesupport-5.2.6/lib/active_support/dependencies.rb:246:in `require_dependency'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:478:in `block (2 levels) in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:477:in `block in eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:475:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/engine.rb:356:in `eager_load!'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `instance_exec'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:32:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:61:in `block in run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:228:in `block in tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:226:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/tsort.rb:205:in `tsort_each'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/initializable.rb:60:in `run_initializers'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/application.rb:361:in `initialize!'
+	from /var/www/rails/CookHub/config/environment.rb:5:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:53:in `require_relative'
+	from config.ru:3:in `block in <main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:27:in `app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:312:in `block in start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:379:in `handle_profiling'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rack-2.2.3/lib/rack/server.rb:311:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:53:in `start'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:147:in `block in perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `tap'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands/server/server_command.rb:142:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command/base.rb:69:in `perform'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/command.rb:46:in `invoke'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/commands.rb:18:in `<main>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'
+	from /var/www/rails/CookHub/bin/rails:9:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client/command.rb:7:in `call'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/client.rb:30:in `run'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/bin/spring:49:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `load'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /var/www/rails/CookHub/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+=> Booting Puma
+=> Rails 5.2.6 application starting in production 
+=> Run `rails server -h` for more startup options
+Exiting
+=> Booting Puma
+=> Rails 5.2.6 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-06-28 16:09:26 +0000 ===
+- Goodbye!
+Exiting
+=> Booting Puma
+=> Rails 5.2.6 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-06-28 16:18:23 +0000 ===
+- Goodbye!
+Exiting
+=> Booting Puma
+=> Rails 5.2.6 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2021-06-28 16:22:13 +0000 ===
+- Goodbye!
+Exiting
+=> Booting Puma
+=> Rails 5.2.6 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on unix:///var/www/rails/CookHub/tmp/sockets/puma.sock
+Use Ctrl-C to stop
+Started GET "/homes/top" for 111.239.166.192 at 2021-06-28 16:57:13 +0000
+Cannot render console from 111.239.166.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 437ms (Views: 431.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/top" for 111.239.166.192 at 2021-06-28 16:57:15 +0000
+Cannot render console from 111.239.166.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/top" for 111.239.166.192 at 2021-06-28 17:00:30 +0000
+Cannot render console from 111.239.166.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 51.254.59.113 at 2021-06-28 17:03:13 +0000
+Cannot render console from 51.254.59.113! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/top" for 111.239.166.192 at 2021-06-28 17:09:16 +0000
+Cannot render console from 111.239.166.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/top" for 111.239.166.192 at 2021-06-28 17:09:18 +0000
+Cannot render console from 111.239.166.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal/redlion" for 192.241.214.251 at 2021-06-28 18:01:02 +0000
+Cannot render console from 192.241.214.251! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/portal/redlion"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/status" for 93.72.114.171 at 2021-06-28 18:04:06 +0000
+Cannot render console from 93.72.114.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/status"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/stat" for 93.72.114.171 at 2021-06-28 18:04:07 +0000
+Cannot render console from 93.72.114.171! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/stat"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/actuator/health" for 192.241.215.66 at 2021-06-28 18:38:55 +0000
+Cannot render console from 192.241.215.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/actuator/health"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/hudson" for 192.241.222.108 at 2021-06-28 19:12:31 +0000
+Cannot render console from 192.241.222.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/hudson"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 196.196.41.68 at 2021-06-28 19:57:57 +0000
+Cannot render console from 196.196.41.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 178.216.26.179 at 2021-06-28 19:59:55 +0000
+Cannot render console from 178.216.26.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.241.217.179 at 2021-06-28 20:25:01 +0000
+Cannot render console from 192.241.217.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/jsonws/invoke" for 45.146.165.123 at 2021-06-28 22:23:54 +0000
+Started POST "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" for 45.146.165.123 at 2021-06-28 22:23:54 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/api/jsonws/invoke"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/?XDEBUG_SESSION_START=phpstorm" for 45.146.165.123 at 2021-06-28 22:23:55 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"XDEBUG_SESSION_START"=>"phpstorm"}
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wp-content/plugins/wp-file-manager/readme.txt" for 45.146.165.123 at 2021-06-28 22:23:55 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/wp-content/plugins/wp-file-manager/readme.txt"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/solr/admin/info/system?wt=json" for 45.146.165.123 at 2021-06-28 22:23:56 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/solr/admin/info/system"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+2021-06-28 22:23:56 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+Started GET "/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21" for 45.146.165.123 at 2021-06-28 22:23:56 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.php"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" for 45.146.165.123 at 2021-06-28 22:23:56 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/Autodiscover/Autodiscover.xml" for 45.146.165.123 at 2021-06-28 22:23:57 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/Autodiscover/Autodiscover.xml"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/console/" for 45.146.165.123 at 2021-06-28 22:23:57 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/console"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/_ignition/execute-solution" for 45.146.165.123 at 2021-06-28 22:23:57 +0000
+Cannot render console from 45.146.165.123! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/_ignition/execute-solution"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+/home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/bundler/gems/webpacker-beb645ecbf70/lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 190.40.199.178 at 2021-06-28 22:40:07 +0000
+Cannot render console from 190.40.199.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 103.145.13.121 at 2021-06-28 22:42:54 +0000
+Cannot render console from 103.145.13.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 209.17.97.34 at 2021-06-28 23:15:20 +0000
+Cannot render console from 209.17.97.34! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qrpqn74792/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
