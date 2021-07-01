@@ -30,14 +30,6 @@ class User < ApplicationRecord
 
   attachment :profile_image
 
-  def is_paid_to_sring
-    if is_paid == true
-      "プレミアム（有料）"
-    elsif is_paid == false
-      "スタンダード（無料）"
-    end
-  end
-
   def is_deleted_to_sring
     if is_deleted == true
       "退会済"
