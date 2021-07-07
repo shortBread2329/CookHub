@@ -1,0 +1,70 @@
+<!---------------------- HEADER ------------------------>
+
+<header class="sticky-top shadow-sm">
+  <nav class="navbar navbar-dark bg-dark p-0">
+    <div class="container-fluid">
+      <!------ Navbar ------>
+      <% if admin_signed_in? %>
+        <a class="" href="/admin">
+          <%= image_tag 'top_icon.png', size: "64x64", alt: "アイコン" %>
+        </a>
+      <% else %>
+        <a class="" href="/">
+          <%= image_tag 'top_icon.png', size: "64x64", alt: "アイコン" %>
+        </a>
+      <% end %>
+
+      <!------- 検索窓 -------->
+      <% if not admin_signed_in? %>
+        <%= search_form_for @search, class:'form-inline my-2 my-lg-0', url: post_recipes_searches_path do |f| %>
+          <%= f.search_field :title_cont, placeholder: 'Enter the recipe name.', class: 'form-control mr-sm-2', size: '22' %>
+          <%= f.submit "Search", class:'btn btn-outline-light my-2 my-sm-0', id:'search-btn' %>
+        <% end %>
+      <% end %>
+
+      <!----- Collapse Button ----->
+      <button class="navbar-toggler toggler-example humberger" type="button" data-toggle="collapse" data-target="#navbarTabContent" aria-controls="navbarTabContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!---- Collapsible Content ------->
+      <div class="collapse navbar-collapse" id="navbarTabContent">
+        <ul class="navbar-nav ml-auto mt-3">
+
+        <!-- 管理者がログインしている場合-->
+        <% if admin_signed_in? %>
+          <li class="nav-item ml-5"><%= link_to "レシピ一覧", admin_post_recipes_path, class: 'nav-link' %></li>
+          <li class="nav-item ml-5"><%= link_to "会員一覧", admin_users_path, class: 'nav-link' %></li>
+          <li class="nav-item ml-5"><%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: 'nav-link' %></li>
+
+        <!--ユーザー（会員）がログインしている場合 -->
+        <% elsif user_signed_in? %>
+          <li class="nav-item ml-5">
+            <a class="nav-link"  href="/about">What's this page?</a>
+          </li>
+          <li class="nav-item ml-5 d-flex">
+            <%= link_to (attachment_image_tag current_user, :profile_image, :fill, 100, 100, format: 'jpg', fallback: 'no_profile_image.jpg', size:'25x25', class:'mt-2 rounded-circle'), user_path(current_user.id) %>
+            <%= link_to "MY PAGE", user_path(current_user.id), class: 'nav-link ml-2' %>
+          </li>
+          <li class="nav-item ml-5"><%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: 'nav-link' %></li>
+
+        <!-- ログインしていない場合 -->
+        <% else %>
+          <li class="nav-item ml-5">
+            <a class="nav-link"  href="/about">What's this page?</a>
+          </li>
+          <li class="nav-item ml-5">
+            <%= link_to "SIGN UP", new_user_registration_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item ml-5">
+            <%= link_to "LOG IN", new_user_session_path, class: 'nav-link' %>
+          </li>
+        <% end %>
+        </ul>
+      </div>
+
+      <!--</div>-->
+    </div>
+  </nav>
+</header>
+

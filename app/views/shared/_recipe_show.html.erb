@@ -1,0 +1,83 @@
+<!---------- レシピ詳細 -------------->
+
+  <div class="row">
+    <div class="mx-auto mt-5">
+      <h2 class="jp-font-classic px-3"><%= post_recipe.title %></h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="mx-auto">
+      <p class="jp-font-classic">by
+      <% if admin_signed_in? %>
+        <%= link_to "#{post_recipe.user.name}", admin_user_path(post_recipe.user.id), class:'font-color-green' %></p>
+      <% else %>
+        <%= link_to "#{post_recipe.user.name}", user_path(post_recipe.user.id), class:'font-color-green' %></p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row mt-2 recipe-img">
+    <%= ix_image_tag(post_recipe.post_recipe_image.path, url_params: { w: 550, h: 400, fit: 'crop' }, tag_options: { class: 'mx-auto' }) %>
+  </div>
+
+  <div class="row mt-4 mb-3">
+    <p style="width: 450px" class="mx-auto text-wrap text-center px-3"><%= post_recipe.introduction %></p>
+  </div>
+
+  <!--いいねボタンとレシピ保存ボタンの部分テンプレートを表示-->
+  <% if post_recipe.is_draft == false %>
+    <%= render partial: '/shared/like_save_buttons', locals: { post_recipe: post_recipe } %>
+  <% end %>
+
+  <div class="row mt-4">
+    <table style="width: 60%" class="table table-borderless mx-auto">
+      <thead class="border-bottom">
+        <th class="d-flex pb-0 mb-2">
+          <h5 class="mb-0 jp-font-classic">材料</h5>
+          <p class="mb-0 ml-1 pt-1 jp-font-classic">（<%= post_recipe.serving %>人前）</p>
+        </th>
+        <th></th>
+      </thead>
+      <tbody>
+        <% post_recipe.ingredients.each do |ingredient| %>
+        <tr>
+          <td style="width: 45%" class='pt-4 pl-4'><%= ingredient.name %></td>
+          <td style="width: 10%" class='pt-4'><%= ingredient.amount %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row mx-auto mt-5">
+    <table style="width: 65%" class="table table-borderless mx-auto">
+      <thead class="page-heading-pink">
+        <th colspan="2" class="py-1">
+          <h5 class="jp-font-classic text-white text-center mb-0">つくり方</h5>
+        </th>
+      </thead>
+      <tbody>
+        <% step_num = 0 %>
+        <% post_recipe.procedures.each do |procedure| %>
+        <tr class="ml-2">
+          <td style='width: 5%' class='text-center font-weight-bold pt-3'><%= step_num += 1 %>)</td>
+          <td style='width: 50%' class="text-wrap pt-3"><%= procedure.body %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+<div class="row mt-5">
+  <div class="mx-auto">
+    <h5 class="mb-0 en-font-pop font-color-green">Comments</h5>
+  </div>
+</div>
+<div class="row">
+  <div class="col-8 offset-3 offset-sm-2">
+    <%= render partial: '/shared/comments', locals: { post_recipe: post_recipe } %>
+  </div>
+</div>
+
+

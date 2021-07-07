@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row mt-5">
+    <h2 class="mx-auto border p-3 page-heading-pink">管理者メニュー</h2>
+  </div>
+
+  <div class="row mt-5 mr-md-1 text-center">
+    <div class="col-md-4 offset-md-2 mb-5 ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+        <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+      </svg>
+      <%= link_to "レシピ一覧", admin_post_recipes_path, class: "pl-3 mt-3" %>
+    </div>
+    <div class="col-md-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    </svg>
+      <%= link_to "会員一覧", admin_users_path, class: "pl-3 mt-3" %>
+    </div>
+  </div>
+
+</div>
+

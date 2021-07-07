@@ -46,7 +46,6 @@ class InitSchema < ActiveRecord::Migration[5.2]
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
       t.string "serving"
-      t.integer "veg_type"
     end
     create_table "procedures" do |t|
       t.integer "post_recipe_id", null: false

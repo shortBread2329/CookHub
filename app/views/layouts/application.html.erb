@@ -4,12 +4,19 @@
     <title>CookHub</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id='footer-position'>
+      <main>
+        <%= render 'layouts/header' %>
+        <%= render 'layouts/flash' %>
+        <%= breadcrumbs separator: " &rsaquo; ", class:'text-dark', id:'breadcrumbs-style' %>
+        <%= yield %>
+        <%= render 'layouts/footer' %>
+      </main>
+    </div>
   </body>
 </html>

@@ -7,7 +7,6 @@ class User < ApplicationRecord
   has_many :post_recipes, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :form_inquiries, dependent: :destroy
-  has_many :chats, dependent: :destroy
   has_one :chat_room, dependent: :destroy
   has_many :histories, dependent: :destroy
   has_many :likes, dependent: :destroy
@@ -29,14 +28,6 @@ class User < ApplicationRecord
   end
 
   attachment :profile_image
-
-  def is_paid_to_sring
-    if is_paid == true
-      "プレミアム（有料）"
-    elsif is_paid == false
-      "スタンダード（無料）"
-    end
-  end
 
   def is_deleted_to_sring
     if is_deleted == true
