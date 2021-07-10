@@ -7,8 +7,6 @@ GIT
       rest-client (~> 2)
       sinatra (~> 2.0.0.beta2)
 
-
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,8 +108,6 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.3-x64-mingw32)
-    font-awesome-sass (5.15.1)
-      sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     gretel (4.3.0)
@@ -307,7 +303,6 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
-  font-awesome-sass (~> 5.13)
   gretel
   jbuilder (~> 2.5)
   jquery-rails
