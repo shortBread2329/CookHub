@@ -1,5 +1,10 @@
+// process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+
+// const webpackConfig = require('./base')
+
+// module.exports = webpackConfig
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-const webpackConfig = require('./base')
+const environment = require('./environment')
 
-module.exports = webpackConfig
+module.exports = environment.toWebpackConfig()
