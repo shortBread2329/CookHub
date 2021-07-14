@@ -1,7 +1,18 @@
 <!---------- レシピ投稿フォーム -------------->
 <% breadcrumb :new_recipe %>
 
-<%= javascript_pack_tag 'post_recipes_new' %> 
+<script>
+  var view = {
+    title: '<%= @post_recipe[:title] %>',
+    introduction: '<%= @post_recipe[:introduction] %>',
+    post_recipe_image: '<%= @post_recipe[:post_recipe_image] %>',
+    procedures: '<%= @post_recipe[:procedures] %>',
+  };
+</script>
+
+<div id='vue'></div>
+<%= javascript_pack_tag 'post_recipes_new' %>  
+
 
 <div class="container mt-4 align-imtes-center">
   <div class='bg-light mx-auto mb-5'>
