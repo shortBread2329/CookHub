@@ -54,7 +54,7 @@ class InitSchema < ActiveRecord::Migration[5.2]
       t.datetime "updated_at", null: false
     end
     create_table "post_ingredients" do |t|
-      t.integer "post_procedure_id", null: false
+      t.integer "procedure_id", null: false
     end
     create_table "ingredients" do |t|
       t.integer "post_ingredient_id", null: false

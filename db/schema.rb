@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2021_06_22_125613) do
   end
 
   create_table "post_ingredients", force: :cascade do |t|
-    t.integer "post_procedure_id", null: false
+    t.integer "procedure_id", null: false
   end
 
   create_table "post_recipes", force: :cascade do |t|

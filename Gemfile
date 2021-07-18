@@ -77,3 +77,5 @@ gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
 # 複数プロセス起動機能
 gem 'foreman'
+# 環境変数モジュール
+gem "dotenv-rails"

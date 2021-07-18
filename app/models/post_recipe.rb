@@ -12,7 +12,6 @@ class PostRecipe < ApplicationRecord
     validates :serving
     validates :title
     validates :introduction
-    validates :ingredients
     validates :procedures
     validates :post_recipe_image
   end
@@ -50,12 +49,12 @@ class PostRecipe < ApplicationRecord
   end
 
   def new_form_instance()
-    procedure_filled_in_count = procedures.length
-    if procedure_filled_in_count < 3
-      add_procedure_form_count = 3 - procedure_filled_in_count
-      for i in 1..add_procedure_form_count do
-        procedures.build
-      end
-    end
+    # procedure_filled_in_count = procedures.length
+    # if procedure_filled_in_count < 3
+    #   add_procedure_form_count = 3 - procedure_filled_in_count
+    #   for i in 1..add_procedure_form_count do
+    #     procedures.build
+    #   end
+    # end
   end
 end

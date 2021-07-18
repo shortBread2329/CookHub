@@ -11,6 +11,7 @@
     <div class="form-group col-md-6">
       <input type="text" class="form-control" id="introduction" placeholder="レシピの説明" v-model="introduction">
     </div>
+
     <div class="custom-file form-group col-md-6">
       <input type="file" class="custom-file-input" id="post_recipe_image" aria-describedby="inputGroupFileAddon04" @change="onImageUploaded">
       <label class="custom-file-label" for="post_recipe_image">写真を選択できます</label>
@@ -51,7 +52,7 @@
 </div>
 
 <div class="card md-3 mr-3 ml-3">
-  <img class="card-img-top" src="" alt="Card image cap">
+  <img class="card-img-top" v-bind:src="post_recipe_image" alt="Card image cap">
   <div class='card-header'>
     <h5 class="card-title">{{ title }}</h5>
     <p class="card-text">{{ introduction }}</p>
@@ -77,13 +78,14 @@
 <script>
 import Vue from 'vue';
 import axios from 'axios';
+
 export default Vue.extend({
   data: function () {
     return {
       title:view.title,
       introduction:view.introduction,
       post_recipe_image:view.post_recipe_image,
-      procedures:[],
+      procedures:view.procedures,
       procedure:"",
       ingredients:[],
       ingredient:"",
@@ -112,6 +114,34 @@ export default Vue.extend({
     },
     post(){
       console.log(this.procedures);
+      let testdata = [
+        {
+          body:"鍋に下記材料を入れ混ぜます。",
+          ingredients:[
+            {ingredient:"卵",amount:"1",unit:"こ"},
+            {ingredient:"牛乳",amount:"100",unit:"cc"},
+            {ingredient:"小麦粉",amount:"30",unit:"g"},
+          ]
+        },
+        {
+          body:"火にかけとろみがついたら完成です。",
+          ingredients:[
+          ]
+        },
+      ];
+      // this.procedures = testdata;
+      axios.post('/post_recipes',{
+        utf8:"✓",
+        authenticity_token:document.querySelector('meta[name="csrf-token"]').content,
+        post_recipe: {
+          title:"カスタードクリーム",
+          introduction:"あいうえお",
+          post_recipe_image:this.post_recipe_image,
+          procedures:this.procedures,
+        },
+        post:"レシピを公開",
+      })
+
     },
     update(){
       console.log(this.procedures);
@@ -132,21 +162,6 @@ export default Vue.extend({
     }
   },
 });
-
-// $.ajax({
-// 		url: 'http://xxx', // 通信先のURL
-// 		type: 'POST',		// 使用するHTTPメソッド (GET/ POST)
-// 		data:$param,
-// 		dataType: 'json' // 応答のデータの種類
-// }).done(function (data, textStatus, jqXHR) {
-// 	console.log(data);
-
-// 	console.log("$param" + $param);
-
-// }).fail(function (jqXHR, textStatus, errorThrown) {
-// 		alert("返答がありませんでした。");
-// });
-
 </script>
 
 <style scoped>

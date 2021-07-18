@@ -1,8 +1,7 @@
 class Ingredient < ApplicationRecord
-  belongs_to :post_recipe, optional: true
+  belongs_to :post_ingredient, optional: true
+  has_many :ingredients
+  has_many :amounts
+  has_many :units
 
-  with_options presence: true, on: :publicize do
-    validates :name
-    validates :amount
-  end
 end

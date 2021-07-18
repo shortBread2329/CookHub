@@ -9,13 +9,17 @@ class Public::PostRecipesController < ApplicationController
 
   def new
     @post_recipe = PostRecipe.new
-    @post_recipe.new_form_instance
+    # @post_recipe.new_form_instance
+
+    # puts(@post_recipe.inspect)
+
   end
 
   def create
     @post_recipe = PostRecipe.new(post_recipe_params)
     # 投稿ボタンを押下した場合
     if params[:post]
+      # puts(@post_recipe.inspect)
       if @post_recipe.save(context: :publicize)
         redirect_to post_recipe_path(@post_recipe), notice: "レシピを投稿しました！"
       else
@@ -98,9 +102,14 @@ class Public::PostRecipesController < ApplicationController
       :introduction,
       :post_recipe_image,
       :is_draft,
-      :serving,
-      procedures_attributes: [:body, :_destroy],
-      ingredients_attributes: [:name, :amount, :_destroy]
+      procedures: [
+        :body, 
+        ingredients: [
+          :ingredient,
+          :amount,
+          :unit,
+        ],
+      ],
     )
   end
 
