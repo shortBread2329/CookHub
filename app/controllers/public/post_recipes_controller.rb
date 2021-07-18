@@ -11,23 +11,24 @@ class Public::PostRecipesController < ApplicationController
     @post_recipe = PostRecipe.new
     # @post_recipe.new_form_instance
 
-    # puts(@post_recipe.inspect)
-
   end
 
   def create
     @post_recipe = PostRecipe.new(post_recipe_params)
     # 投稿ボタンを押下した場合
     if params[:post]
-      # puts(@post_recipe.inspect)
       if @post_recipe.save(context: :publicize)
         redirect_to post_recipe_path(@post_recipe), notice: "レシピを投稿しました！"
       else
         @post_recipe.new_form_instance
         render :new, alert: "登録できませんでした。お手数ですが、入力内容をご確認のうえ再度お試しください"
       end
+    elsif params[:gettags]
+      puts("★")
+      tags = Vision.get_image_data(@post_recipe.post_recipe_image)
+      redirect_to post_recipe_path(@post_recipe), notice: tags
     # 下書きボタンを押下した場合
-    else
+　  else
       if @post_recipe.update(is_draft: true)
         redirect_to user_path(current_user), notice: "レシピを下書き保存しました！"
       else

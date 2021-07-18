@@ -158,6 +158,15 @@ export default Vue.extend({
       // readAdDataURLが完了したあと実行される処理
       reader.onload = () => {
         this.post_recipe_image = reader.result
+        axios.post('/post_recipes',{
+          utf8:"✓",
+          authenticity_token:document.querySelector('meta[name="csrf-token"]').content,
+          post_recipe: {
+            post_recipe_image:this.post_recipe_image,
+          },
+          gettags:"",
+        })
+        
       }
     }
   },
